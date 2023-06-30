@@ -18,9 +18,10 @@ using namespace mlir::jack;
 #define GET_TYPEDEF_CLASSES
 #include "jack/JackOpsTypes.cpp.inc"
 
-void JackDialect::registerTypes() {
+// TODO: Type support
+/*void JackDialect::registerTypes() {
   addTypes<
 #define GET_TYPEDEF_LIST
 #include "jack/JackOpsTypes.cpp.inc"
       >();
-}
+}*/

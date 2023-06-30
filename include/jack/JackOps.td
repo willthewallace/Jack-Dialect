@@ -42,9 +42,8 @@ def ConstantOp : Jack_Op<"constant", [Pure]> {
   // The constant operation returns a single 64 bit float.
   let results = (outs F64);
 
-  // TODO: custom parser and printer
   // Indicate that the operation has a custom parser and printer method.
-  //let hasCustomAssemblyFormat = 1;
+  let hasCustomAssemblyFormat = 1;
 
   // Add custom build methods for the constant operation. These method populates
   // the `state` that MLIR uses to create operations, i.e. these are used when
@@ -60,7 +59,6 @@ def ConstantOp : Jack_Op<"constant", [Pure]> {
   ];  
 
   // Indicate that additional verification for this operation is necessary.
-  // TODO: additional veirfication.
   let hasVerifier = 1;
 }
 

@@ -9,12 +9,6 @@
 #include "jack/JackOps.h"
 #include "jack/JackTypes.h"
 
-
-#include "mlir/IR/Builders.h"
-#include "mlir/IR/BuiltinTypes.h"
-#include "mlir/IR/FunctionImplementation.h"
-#include "mlir/IR/OpImplementation.h"
-
 using namespace mlir;
 using namespace mlir::jack;
 
@@ -30,9 +24,3 @@ void JackDialect::initialize() {
 #include "jack/JackOps.cpp.inc"
       >();
 }
-
-//TODO: Consider moving Jack Operations to its own file
-//===----------------------------------------------------------------------===//
-// Jack Operations
-//===----------------------------------------------------------------------===//
-
